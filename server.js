@@ -21,6 +21,6 @@ app.use("/authentication", authsRouter);
 mongoose.connect(process.env.MONGO_URI);
 
 // Listen for requests
-// app.listen(process.env.PORT, () => {
-//   console.log("listening on port 4000");
-// });
+app.listen(process.env.PORT, "0.0.0.0", () => {
+  console.log("listening on port 4000");
+});
