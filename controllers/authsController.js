@@ -99,7 +99,7 @@ const sendEmailUrl = async (url, email) => {
       from: { name: "Noteify", address: process.env.AUTH_EMAIL },
       to: email,
       subject: "Noteify - Request for reset password",
-      html: `<p>Here is your reset password link <a href="http://localhost:5173/reset-password?token=${url}">Click here</a> note that the link only valid for 10 minutes.</p>`,
+      html: `<p>Here is your reset password link <a href="https://noteify-io.netlify.app/reset-password?token=${url}">Click here</a> note that the link only valid for 10 minutes.</p>`,
     });
     return info;
   } catch (error) {
