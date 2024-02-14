@@ -113,9 +113,10 @@ const logoutUser = (req, res) => {
   // Clear the session cookie in the response
   res.clearCookie("user", {
     httpOnly: true,
-
+    sameSite: "none",
+    secure: true,
     path: "/",
-    domain: "noteify-server.onrender.com",
+    domain: ".onrender.com",
   });
 
   // Send a response indicating successful logout
