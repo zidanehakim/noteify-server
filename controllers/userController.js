@@ -116,7 +116,7 @@ const logoutUser = (req, res) => {
     sameSite: "none",
     secure: true,
     path: "/",
-    domain: "onrender.com",
+    domain: "noteify-server.onrender.com",
   });
 
   // Send a response indicating successful logout
