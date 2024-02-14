@@ -32,7 +32,6 @@ const loginUser = async (req, res, next) => {
 
     res.cookie("user", JSON.stringify(payload), {
       httpOnly: true,
-      domain: "noteify-server.onrender.com",
       sameSite: "none",
       secure: true,
       maxAge: rememberme
@@ -66,7 +65,6 @@ const signupUser = async (req, res, next) => {
 
     res.cookie("user", JSON.stringify(payload), {
       httpOnly: true,
-      domain: "noteify-server.onrender.com",
       sameSite: "none",
       secure: true,
     });
@@ -92,7 +90,6 @@ const loginGoogleUser = async (req, res, next) => {
 
     res.cookie("user", JSON.stringify(payload), {
       httpOnly: true,
-      domain: "noteify-server.onrender.com",
       sameSite: "none",
       secure: true,
       maxAge: rememberme
