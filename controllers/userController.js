@@ -116,7 +116,7 @@ const logoutUser = (req, res) => {
     sameSite: "none",
     secure: true,
     path: "/",
-    domain: "noteify-server.onrender.com",
+    domain: "noteify-server.vercel.app",
   });
 
   // Send a response indicating successful logout
